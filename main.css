@@ -8,13 +8,40 @@ html, body{
     max-width: 500px;
     margin: 50px auto;
     background-color: white;
+    text-align: center;
 }
 
-.content, .flash-cards, .table{
+.content, .flash-cards{
+    width: 100vw;
     max-width: 1200px;
     background-color: white;
     padding: 20px;
     margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-evenly;
+}
+
+.table{
+    width: 100vw;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.main-content{
+    order: 2;
+    margin: 0px 5vw;
+}
+.sidebar-1{
+    order: 1;
+}
+.sidebar-2{
+    order: 3;
 }
 
 .card{
@@ -44,22 +71,43 @@ html, body{
 .main-page{
     background-color: rgb(113, 243, 182);
     padding: 15px;
+    width: 25vw;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .secondary-page{
+    width: 25vw;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    
     
 }
 
 .section-1{
     background-color: rgb(135, 166, 250);
+    margin: 0;
+    height: 33%;
 }
 
 .section-2{
     background-color: rgb(105, 129, 197);
+    margin: 0;
+    height: 33%;
 
 }
 
 .section-3{
     background-color: rgb(74, 91, 139);
+    margin: 0;
+    height: 33%;
+
 }
 
+h4{
+    margin: 0;
+    padding-top: 15px;
+}
